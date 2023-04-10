@@ -1,8 +1,8 @@
 {
-  "name": "hvac-register-frame",
+  "name": "hvac-register-repair",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://llaenowyd.github.io/hvac-register-frame",
+  "homepage": "http://llaenowyd.github.io/hvac-register-repair",
   "dependencies": {
     "@a110/rito": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.5",
