@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useMemo } from 'react'
+
+import { useDeviceColorScheme } from '@a110/rito';
+
+import Carousel from './Carousel'
+import Hint from './Hint'
+import Title from './Title'
+
+import classes from './App.module.css';
 
 function App() {
+  const colorScheme = useDeviceColorScheme()
+
+  const className = useMemo(() => {
+    const appClass = classes.app
+    const colorSchemeClass = 'dark' === colorScheme ? classes.dark : classes.light
+    
+    return [appClass, colorSchemeClass].join(' ')
+  }, [colorScheme])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={className}>
+      <Title />
+      <Hint />
+      <Carousel />
     </div>
   );
 }
