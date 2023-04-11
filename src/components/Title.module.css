@@ -1,6 +1,7 @@
 .title {
     width: 100%;
     text-align: center;
-    padding: 1em 0 1em;
+    padding: 1em 0 0.5em;
     font-weight: 900;
+    user-select: none;
 }

@@ -11,10 +11,10 @@
 
 .dark {
     background-color: #211717;
-    color: #DFDDC7;
+    color: #DFDDC7 !important;
 }
 
 .light {
     background-color: #DFDDC7;
-    color: #211717;
+    color: #211717 !important;
 }
