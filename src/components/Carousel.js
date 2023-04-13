@@ -44,8 +44,10 @@ function Carousel() {
   });
 
   return (
-    <div className={classes.imageContainer} {...swipeHandlers}>
-      <img className={classes.image} src={currentImage} />
+    <div className={classes.carousel} {...swipeHandlers}>
+      <div className={classes.imageContainer}>
+        <img className={classes.image} src={currentImage} />
+      </div>
     </div>
   );
 }

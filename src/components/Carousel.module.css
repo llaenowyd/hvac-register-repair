@@ -1,18 +1,24 @@
-.imageContainer {
+.carousel {
     min-height: 0;
     max-height: 100%;
     display: flex;
     justify-content: center;
     flex: 1;
     user-select: none;
+    padding: 0 0 1em 0;
+}
+
+.imageContainer {
+    padding: 0.5em 0.15em 0 0.15em;
 }
 
 .image {
-    flex-shrink: 1;
+    flex: 1;
     min-width: 0;
     max-width: 100%;
     min-height: 0;
     max-height: 100%;
+    object-fit: contain;
     user-select: none;
     pointer-events: none;
 }

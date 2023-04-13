@@ -5,6 +5,7 @@ import { useDeviceColorScheme } from "@a110/rito";
 import Carousel from "./Carousel";
 import Hint from "./Hint";
 import MiniCarousel from "./MiniCarousel";
+import PageNumber from "./PageNumber";
 import Title from "./Title";
 
 import classes from "./App.module.css";
@@ -25,6 +26,7 @@ function App() {
       <Title />
       <Hint />
       <MiniCarousel />
+      <PageNumber />
       <Carousel />
     </div>
   );

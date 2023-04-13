@@ -1,3 +1,27 @@
 .container {
-  text-decoration: underline;
+  padding: 0 0 0.5em 0;
+  overflow-x: clip;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: center;
+  gap: 0.25em;
+}
+
+.thumbnail {
+  width: 2em;
+  aspect-ratio: 1;
+  opacity: 65%;
+  cursor: pointer;
+}
+
+.highlightDark {
+  border: 2px solid #DFDDC7;
+  cursor: default;
+}
+
+.highlightLight {
+  border: 2px solid #211717;
+  cursor: default;
 }
