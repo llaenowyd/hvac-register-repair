@@ -1,6 +1,6 @@
 import { atom, selector } from "recoil";
 
-import { mod } from "./util";
+import { mod, makeContentUrl } from "./util";
 
 export const imagesState = atom({
   key: "images",
@@ -17,7 +17,7 @@ export const imagesState = atom({
     "230409_8_precise_fit.jpg",
     "230409_9_placed.jpg",
     "230409_a_obstructive_shelf.jpg",
-  ].map((imageName) => `hvac-register-repair/content/${imageName}`),
+  ].map(makeContentUrl),
 });
 
 export const rawImageIndexState = atom({
