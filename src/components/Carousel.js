@@ -4,7 +4,7 @@ import { useSwipeable } from "react-swipeable";
 import { useCurrentImage } from "../hooks/useCurrentImage";
 import { useCurrentImageStepper } from "../hooks/useCurrentImageStepper";
 
-import classes from "./Carousel.module.css";
+import classes from "../styles/Carousel.module.css";
 
 // const staticHandlers = Object.fromEntries(
 //   [

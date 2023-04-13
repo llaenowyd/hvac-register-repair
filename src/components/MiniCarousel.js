@@ -6,7 +6,7 @@ import { useCurrentImage } from "../hooks/useCurrentImage";
 import { useImages } from "../hooks/useImages";
 import { useSetCurrentImage } from "../hooks/useSetCurrentImage";
 
-import classes from "./MiniCarousel.module.css";
+import classes from "../styles/MiniCarousel.module.css";
 
 const MiniCarousel = () => {
   const colorScheme = useDeviceColorScheme();

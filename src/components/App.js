@@ -1,32 +1,17 @@
-import { useMemo } from "react";
-
-import { useDeviceColorScheme } from "@a110/rito";
-
+import { useThemedStyleClass } from "../hooks/useThemedStyleClass";
 import Carousel from "./Carousel";
-import Hint from "./Hint";
+import Controls from "./Controls";
 import MiniCarousel from "./MiniCarousel";
-import PageNumber from "./PageNumber";
-import Title from "./Title";
 
-import classes from "./App.module.css";
+import classes from "../styles/App.module.css";
 
 function App() {
-  const colorScheme = useDeviceColorScheme();
-
-  const className = useMemo(() => {
-    const appClass = classes.app;
-    const colorSchemeClass =
-      "dark" === colorScheme ? classes.dark : classes.light;
-
-    return [appClass, colorSchemeClass].join(" ");
-  }, [colorScheme]);
+  const className = useThemedStyleClass(classes.app);
 
   return (
     <div className={className}>
-      <Title />
-      <Hint />
       <MiniCarousel />
-      <PageNumber />
+      <Controls />
       <Carousel />
     </div>
   );

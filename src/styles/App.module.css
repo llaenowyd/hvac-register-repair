@@ -8,13 +8,3 @@
     flex-direction: column;
     box-sizing: border-box;
 }
-
-.dark {
-    background-color: #211717;
-    color: #DFDDC7 !important;
-}
-
-.light {
-    background-color: #DFDDC7;
-    color: #211717 !important;
-}

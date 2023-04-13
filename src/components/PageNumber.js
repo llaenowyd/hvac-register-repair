@@ -1,6 +1,6 @@
 import { usePageNumber } from "../hooks/usePageNumber";
 
-import classes from "./PageNumber.module.css";
+import classes from "../styles/PageNumber.module.css";
 
 const PageNumber = () => {
   const [pageNumber, numImages] = usePageNumber();
